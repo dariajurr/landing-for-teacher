@@ -208,6 +208,21 @@
     line-height: 1.5;
 }
 
+.achievements {
+    height: 200px;
+}
+
+.parallax {
+    height: 350px;
+    background-image: url(./images/parallax.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Начало медиа запросов */
+
 @media screen and (max-width: 1046px) {
     .navigation {
         order: 1;
@@ -270,6 +285,10 @@
     .items-list {
         flex-direction: column;
         align-items: center;
+    }
+
+    .parallax {
+        background-attachment: scroll;
     }
 }
 
