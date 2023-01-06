@@ -34,7 +34,7 @@
 }
 
 .header {
-    background-color: #d8eaec;
+    background-color: #e0e6ff;
     padding: 20px 40px;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .profile {
-    background: linear-gradient(#d8eaec 80%, #fff 20%);;
+    background: linear-gradient(#e0e6ff 80%, #fff 20%);;
     padding: 0 40px;
 }
 
