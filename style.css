@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./fonts/Inter-Regular/Inter-Regular.woff2") format("woff2"),
+         url("./fonts/Inter-Regular/Inter-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./fonts/Inter-Medium/Inter-Medium.woff2") format("woff2"),
+         url("./fonts/Inter-Medium/Inter-Medium.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #121212;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    
+}
+
+.header {
+    background-color: #d8eaec;
+    padding: 20px 40px;
+}
+
+.header__items {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.humburger {
+    background: transparent;
+    border: none;
+    display: none;
+    padding: 11px 8px 10px;
+}
+
+.humburger__item {
+    background-color: #121212;
+    display: block;
+    height: 3px;
+    width: 28px;
+}
+
+.humburger__item:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.navigation {
+    display: flex;
+    order: 0;
+}
+
+.navigation__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navigation__item {
+    padding: 10px 25px;
+    
+}
+
+.navigation__link {
+    text-decoration: none;
+    cursor: pointer;  
+    color: #121212; 
+}
+
+.social__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;    
+}
+
+.social__link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social__icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1046px) {
+    .navigation {
+        order: 1;
+    }
+
+    .navigation__items {
+        display: none;
+    }
+
+    .humburger {
+        display: block;
+    }
+}
