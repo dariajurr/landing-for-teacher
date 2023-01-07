@@ -208,10 +208,6 @@
     line-height: 1.5;
 }
 
-.achievements {
-    height: 200px;
-}
-
 .parallax {
     height: 350px;
     background-image: url(./images/parallax.jpg);
@@ -219,6 +215,53 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.achievements {
+    padding: 80px 40px 0;
+    background-color: #e0e6ff;
+}
+
+.achievements__content {
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+}
+
+.achievements__overtitle {
+    font-size: 21px;
+}
+
+.achievements__title {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.achievements__gallery-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin:  0;
+    flex-wrap: wrap;
+}
+
+.achievements__gallery-item {
+    max-width: 287px;
+    height: 406px;
+    overflow: hidden;
+}
+
+.achievements__gallery-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.achievements__gallery-btn_prev, .achievements__gallery-btn_next {
+    margin: 0;
+    border: none;
+    background: none;
+    font-size: 40px;
 }
 
 /* Начало медиа запросов */
@@ -289,6 +332,10 @@
 
     .parallax {
         background-attachment: scroll;
+    }
+
+    .achievements__gallery-item {
+        margin: auto;
     }
 }
 
