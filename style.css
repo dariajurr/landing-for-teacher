@@ -291,6 +291,10 @@
     grid-gap: 15px;
 }
 
+.my-class__images.my-class__images_mobile {
+    display: none;
+}
+
 .my-class__image-link {
     display: flex;
 }
@@ -341,12 +345,12 @@
         width:60%;
     }
 
-    .about-me__title, .qualification__title{
+    .about-me__title, .qualification__title, .achievements__title, .my-class__title {
         font-size: 30px;
         margin-bottom: 15px;
     }
     
-    .about-me__description {
+    .about-me__description, .my-class__description {
         font-size: 16px;
         line-height: 1.5;
     }
@@ -381,6 +385,14 @@
 
     .achievements__gallery-item {
         margin: auto;
+    }
+
+    .my-class__images.my-class__images_mobile {
+        display: block;
+    }
+
+    .my-class__images.my-class__images_desktop {
+        display: none;
     }
 }
 
