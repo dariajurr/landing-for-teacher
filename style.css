@@ -218,7 +218,7 @@
 }
 
 .achievements {
-    padding: 80px 40px 0;
+    padding: 80px 40px;
     background-color: #e0e6ff;
 }
 
@@ -263,6 +263,51 @@
     background: none;
     font-size: 40px;
 }
+
+.my-class {
+    max-width: 1280px;
+    margin: auto;
+    padding: 80px 40px 50px;
+    text-align: center;
+}
+
+.my-class__title {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.my-class__description {
+    max-width: 750px;
+    font-size: 18px;
+    line-height: 2;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.my-class__images {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 15px;
+}
+
+.my-class__image-link {
+    display: flex;
+}
+
+.my-class__image-link:nth-child(1), .my-class__image-link:nth-child(2) {
+    grid-column: span 3;
+}
+
+.my-class__image-link:nth-child(3), .my-class__image-link:nth-child(4), .my-class__image-link:nth-child(5) {
+    grid-column: span 2;
+}
+
+.my-class__image {
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /* Начало медиа запросов */
 
